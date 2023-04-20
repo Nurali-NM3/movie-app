@@ -1,0 +1,13 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.col-3{
+    width: 25%;
+    padding: 0 15px;
+}
+.img-popular{
+    width: 100%;
+
+}

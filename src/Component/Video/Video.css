@@ -1,0 +1,12 @@
+.modal-video{
+    width: 0;
+    height: 0;
+}
+.modal-video-body{
+    width: 0;
+    height: 0;
+}
+.modal-video-inner{
+    width: 0 !important;
+    height: 0;
+}
