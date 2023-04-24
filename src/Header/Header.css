@@ -1,0 +1,58 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.sidebar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+a:focus{
+    text-decoration-line: underline;
+}
+select{
+    border:2px solid transparent;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #dadee3;
+    cursor: pointer;
+    padding: 3px 7px;
+}
+select:hover{
+    background-color: #1e1b1b;
+}
+option{
+    background-color: black;
+    color: #ffffff;
+    border: 5px;
+    border: none;
+}
+option:hover{
+    background-color: #1e1b1b;
+}
+.wr-sign-up{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+input{
+    border-radius: 20px;
+    background-color: #282525;
+    border: none;
+    height: 23px;
+    color: white;
+    padding: 0 10px;
+}
+.search{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}

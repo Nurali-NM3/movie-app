@@ -1,0 +1,96 @@
+.img-uniq{
+    width: 100%;
+    height: 100%;
+}
+.movie-info{
+    width: 100%;
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.movie-title{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+}
+.about-movie{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+h1{
+    font-size: 90px;
+}
+.wr-btn{
+    position: absolute;
+    top: 300px;
+    right: 200px;
+}
+.btn2{
+    padding: 50px;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.38);
+    border: 2px solid #e00a1e;
+    color: #e00a1e;
+}
+.movie-title img{
+    width: 100%;
+    height: 100%;
+}
+.genres{
+    display: flex;
+    gap: 10px;
+    color: #4c4e50;
+}
+.country{
+    display: flex;
+    gap: 10px;
+    color: #dadee3;
+    align-items: center;
+}
+.companies{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #dadee3;
+}
+.company{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.no-logo{
+    width: 250px;
+    height: 200px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.logos{
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
+}
+.wrapper-video{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 50px;
+}
+.video {
+    width: 100%;
+    height: 600px;
+}
+video{
+    width: 400px;
+    height: 300px;
+}

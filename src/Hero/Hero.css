@@ -1,0 +1,55 @@
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-wrapper{
+    height: 600px;
+    width: 50%;
+}
+
+.wr-slide{
+    display: flex;
+    flex-direction: column;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.wr-info{
+    width: 700px;
+    height: 400px;
+    position: relative;
+}
+.vote-btn{
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.52);
+    color: gold;
+    border: 2px solid gold;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.slide-content{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    bottom: 20px;
+}
+.swiper-button-prev,
+.swiper-button-next{
+    color: #737373;
+}
+

@@ -7,6 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body{
+  background-color: #1e1b1b;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -20,5 +23,18 @@ code {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: 15px;
+  padding: 0 15px;
 }
+a,p,h1{
+  color: #ffffff;
+  text-decoration: none;
+}
+.btn{
+  padding: 5px 10px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  background:#e00a1e
+}
+
+

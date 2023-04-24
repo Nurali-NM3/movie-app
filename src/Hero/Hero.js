@@ -6,18 +6,17 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import './Hero.css'
 import axios from "axios";
-import Video from "../Video/Video";
+import {Link} from "react-router-dom";
 
 
-const Hero = () => {
+const Hero = ({lang}) => {
     const [movies,setMovies] = useState([])
     useEffect(() =>{
-        axios.get('https://api.themoviedb.org/3/discover/movie?api_key=7f7ff843e3ed2f93a548e15db507c48f&page=2')
+        axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=7f7ff843e3ed2f93a548e15db507c48f&language=${lang}-US&page=1`)
             .then(({data}) =>{
-                console.log(data.results)
                 setMovies(data.results)
             })
-    },[])
+    },[lang])
     return (
         <div className={'swiper-wrapper wr-slide'}>
             <Swiper
@@ -39,11 +38,23 @@ const Hero = () => {
                         return(
 
                                  <SwiperSlide key={movie.id}>
-                                    <div className="wr-info">
+                                    <div className="wr-info" >
                                             <img
-                                                src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`}
+                                                loading={"lazy"}
+                                                src={`https://www.themoviedb.org/t/p/w1066_and_h600_bestv2/${movie.backdrop_path ||movie.poster_path}`}
                                                 alt=""/>
-                                            <h3>{movie.original_title}</h3>
+                                       <div className="slide-content">
+                                           <button className={'vote-btn'}>
+                                               {Math.round(movie.vote_average)}.0
+                                           </button>
+                                           <h3>
+                                               {<Link
+                                                   to={`movie/${movie.id}`}>
+                                                   {lang ==='ru' ? movie.title :  movie.original_title}
+                                               </Link>}
+                                           </h3>
+                                           <p>{movie.release_date}</p>
+                                       </div>
                                     </div>
                                  </SwiperSlide>
 

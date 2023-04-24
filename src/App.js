@@ -1,20 +1,26 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Homepage from "./Homepage/Homepage";
-import Header from "./Component/Header/Header";
-import Page from "./Page/Page";
-import LatestPage from "./Page/LatesPage";
+import Header from "./Header/Header";
+import Movie from "./movie";
+import {useState} from "react";
+import Popular from "./Popular/Popular";
+import SearchPage from "./SearchPage";
+import Footer from "./Footer";
 
 function App() {
-
+    const  [lang,setLang] = useState('')
+    console.log(lang)
   return (
     <div className="container">
       <BrowserRouter>
-          <Header/>
+          <Header handleLang={setLang} lang={lang}/>
         <Routes>
-          <Route path={'/'} element={<Homepage/>}/>
-            <Route path={'/page'}element={<Page/>}/>
-            <Route path={'/latest-page'} element={<LatestPage/>}/>
+          <Route path={'/'} element={<Homepage lang={lang}/>}/>
+            <Route path={'/popular'} element={<Popular lang={lang}/>}/>
+            <Route path={'/movie/:id'} element={<Movie lang={lang}/>}/>
+            <Route path={'/searchMovie/:name'} element={<SearchPage lang={lang}/>}/>
         </Routes>
+          <Footer/>
       </BrowserRouter>
     </div>
   );
