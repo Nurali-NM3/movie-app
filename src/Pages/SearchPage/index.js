@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
-import List from "../Component/list/List";
+import List from "../../Component/list/List";
 import {useParams} from "react-router-dom";
 const SearchPage =({lang})=>{
     const [movies,setMovies] =useState([])

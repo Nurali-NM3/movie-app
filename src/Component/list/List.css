@@ -9,12 +9,15 @@
     right: 10px;
 }
 .box h3{
-    background-color: #282525;
+    background-color: #f4fffd;
     color: black;
     padding: 20px 0;
     height: 100px;
     margin-top: -5px ;
     text-align: center;
+}
+.box a {
+    color: #1e1b1b;
 }
 .no-img{
     background-color: #1e1b1b;

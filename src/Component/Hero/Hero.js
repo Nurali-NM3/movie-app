@@ -36,7 +36,6 @@ const Hero = ({lang}) => {
                 {
                     movies.map((movie) =>{
                         return(
-
                                  <SwiperSlide key={movie.id}>
                                     <div className="wr-info" >
                                             <img

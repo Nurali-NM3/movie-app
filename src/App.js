@@ -1,11 +1,12 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Homepage from "./Homepage/Homepage";
-import Header from "./Header/Header";
-import Movie from "./movie";
+import Homepage from "./Pages/Homepage/Homepage";
+import Header from "./Component/Header/Header";
+import Movie from "./Pages/movie";
 import {useState} from "react";
-import Popular from "./Popular/Popular";
-import SearchPage from "./SearchPage";
-import Footer from "./Footer";
+import Popular from "./Pages/Popular/Popular";
+import SearchPage from "./Pages/SearchPage";
+import Footer from "./Component/Footer";
+import CharactersPage from "./Pages/CharactersPage";
 
 function App() {
     const  [lang,setLang] = useState('')
@@ -19,6 +20,7 @@ function App() {
             <Route path={'/popular'} element={<Popular lang={lang}/>}/>
             <Route path={'/movie/:id'} element={<Movie lang={lang}/>}/>
             <Route path={'/searchMovie/:name'} element={<SearchPage lang={lang}/>}/>
+            <Route path={'/CharactersPage/:id'} element={<CharactersPage/>}/>
         </Routes>
           <Footer/>
       </BrowserRouter>

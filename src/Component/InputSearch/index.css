@@ -1,0 +1,25 @@
+.search-input{
+    position: relative;
+}
+.dropDown{
+    position: absolute;
+    z-index: 3333;
+    width: 300px;
+    background-color: #282525;
+    border-radius: 5px;
+    gap: 10px;
+}
+.dropDown-movie{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    gap: 10px;
+}
+.dropDown-img, .no-img1{
+    height: 100px;
+    width: 150px;
+}
+.no-img1{
+    border:2px solid #dadee3;
+}

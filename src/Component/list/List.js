@@ -10,7 +10,10 @@ const List = ({movies,lang}) => {
                         <div className={'col-3'} key={movie.id}>
                             <div className="box">
                                 {/*'https://api.themoviedb.org/3/movie/{movie_id}/rating?api_key=<<api_key>>'*/}
-                                <button className={'vote-btn vote-btn-list'}>{Math.round(movie.vote_average)}.0</button>
+                                <button
+                                    className={'vote-btn vote-btn-list'}>
+                                    {Math.round(movie.vote_average)}.0
+                                </button>
                                 {movie.poster_path !==null ?
                                     <img
                                         className={'img-popular'}
@@ -25,7 +28,8 @@ const List = ({movies,lang}) => {
                                             {lang ==='ru'? movie.title
                                                 : movie.original_title
                                                 }
-                                        </Link>}
+                                        </Link>
+                                    }
                                 </h3>
                             </div>
                         </div>

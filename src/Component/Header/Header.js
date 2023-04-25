@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Header.css'
 import {Link} from "react-router-dom";
-import Search from "../Component/InputSearch";
+import Search from "../InputSearch";
 
 function Header({handleLang,lang}) {
     const [searchTerm, setSearchTerm] = useState('')
