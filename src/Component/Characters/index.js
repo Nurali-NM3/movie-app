@@ -7,7 +7,7 @@ import { Pagination } from "swiper";
 import {Link} from "react-router-dom";
 const Characters = ({characters}) => {
     return (
-        <div>
+        <div className={'wr-characters'}>
             <h2>Characters</h2>
             <Swiper
                 slidesPerView={1}
@@ -32,10 +32,10 @@ const Characters = ({characters}) => {
                 modules={[Pagination]}
                 className="mySwiper"
             >
-                <div>
+                <div className={'swiper-character'}>
                     {
                         characters.map(character =>
-                           <SwiperSlide key={character.id}>
+                           <SwiperSlide  key={character.id}>
 
                                   <Link to={`/CharactersPage/${character.id}`}>
                                       {character.profile_path !==null ?

@@ -3,11 +3,22 @@
     flex-wrap: wrap;
     margin: 0 -15px;
 }
-.col-3{
-    width: 25%;
-    padding: 0 15px;
-}
+
 .img-popular{
     width: 100%;
-    height: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.wr-btnNavigate{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 10px;
+}
+@media screen and (max-width: 570px){
+    .img-popular{
+        object-fit: contain;
+    }
+
 }

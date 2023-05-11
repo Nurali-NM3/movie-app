@@ -1,17 +1,20 @@
-.swiper-slide{
-    width: 235px !important;
-    height: 370px;
-    margin-right: 45px !important;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 10px;
-}
+/*.swiper-slide{*/
+/*    width: 235px !important;*/
+/*    height: 370px;*/
+/*    margin-right: 45px !important;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    flex-direction: column;*/
+/*    border-radius: 10px;*/
+/*}*/
 .swiper-wrapper{
-    height: 460px;
+    height: 460px !important;
     display: flex;
     align-items: center;
 
+}
+.mySwiper{
+    height: 550px;
 }
 .character-info{
     display: flex;
@@ -19,16 +22,16 @@
     align-items: center;
     flex-direction: column;
     background-color: #282525;
-    width: 50%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px ;
 }
 .img-character{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    width: 50% !important;
-    height: 300px !important;
     object-fit: contain !important;
+}
+.wr-characters{
+    padding: 30px 0 ;
 }
 .no-img2{
     display: flex;

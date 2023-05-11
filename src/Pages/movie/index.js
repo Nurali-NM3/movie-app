@@ -50,13 +50,10 @@ const Movie = ({lang}) => {
             })
     },[params,lang])
     return (
-       <div>
+       <div className={'container'}>
            { loading ? <h2>hold on a second...</h2>:
                <div className={'wrapper-movie'}>
-                   <Button
-                       navigation={navigation}
-                       title={'back'}
-                   />
+
                    <div className="movie-info" >
                        <img
                            src={`https://www.themoviedb.org/t/p/w1066_and_h600_bestv2/${movies.backdrop_path}`}
@@ -93,26 +90,25 @@ const Movie = ({lang}) => {
 
                        </div>
                    </div>
-                   <div className={'overview'}>
-                       <h2>Company</h2>
-                       <div className="companies">
-                           {
-                               companies.map((company) =>(
-                                   <div key={company.id} className={'company'} >
-                                       {company.logo_path !==null ?
-                                           <img
-                                               className={'logos'}
-                                               src={`https://image.tmdb.org/t/p/w500/${company.logo_path}`}
-                                               alt=""/>
-                                           : <div className={'no-logo'}> no logo</div>
-                                       }
-                                       <h2>{company.name}</h2>
-                                   </div>
-                               ))
-                           }
-                       </div>
-                       <h2>overview</h2>
-                       <p>{movies.overview}</p>
+                   <Button
+                       navigation={navigation}
+                       title={'back'}
+                   />
+                   <div className={'wr-overview'}>
+                       {/*<div className="companies">*/}
+                       {/*    <h2>Company</h2>*/}
+                       {/*    {*/}
+                       {/*        companies.map((company) =>(*/}
+                       {/*            <div key={company.id} className={'company'} >*/}
+                       {/*                <h2>{company.name}</h2>*/}
+                       {/*            </div>*/}
+                       {/*        ))*/}
+                       {/*    }*/}
+                       {/*</div>*/}
+                      <div className={'overview'}>
+                          <h2>overview</h2>
+                          <p>{movies.overview}</p>
+                      </div>
                    </div>
                    <Characters characters={characters}/>
                    <div className="similar">

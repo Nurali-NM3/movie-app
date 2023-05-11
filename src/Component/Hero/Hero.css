@@ -4,8 +4,8 @@
     height: 100%;
 }
 .swiper-wrapper{
-    height: 600px;
-    width: 50%;
+    height: 670px !important;
+    width: 100%;
 }
 
 .wr-slide{
@@ -27,9 +27,10 @@
     object-fit: cover;
 }
 .wr-info{
-    width: 700px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     position: relative;
+    margin-bottom: 60px;
 }
 .vote-btn{
     padding: 5px 10px;
