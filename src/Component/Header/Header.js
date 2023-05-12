@@ -23,7 +23,6 @@ function Header({handleLang, lang}) {
                        <Link to="/">HOME</Link>
                        <Link to="/popular">POPULAR</Link>
                        <Link to="/new">NEW</Link>
-                       <Link to="/popular">LIST</Link>
                    </nav>
                    <div className={'wr-search'}>
                        <div className="search">
