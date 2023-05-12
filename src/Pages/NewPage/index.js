@@ -20,16 +20,14 @@ const NewPage = ({lang}) => {
         setNext(next -1)
     }
     return (
-        <div>
-                <div>
+                <div className={'container'}>
+                    <List movies={movies} lang={lang}/>
                     <div className="wr-btnNavigate">
-                        <Button navigation={navigation} title={'back'}/>
                         <button className={'listNavigate' } disabled={next ===1 ?true: ''} onClick={prevPage}>prev</button>
                         <button className={'listNavigate'} disabled={next===500?true: ''} onClick={nextPage}>next</button>
                     </div>
-                    <List movies={movies} lang={lang}/>
+                    <Button navigation={navigation} title={'back'}/>
                 </div>
-        </div>
     );
 };
 

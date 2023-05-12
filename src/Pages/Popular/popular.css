@@ -10,11 +10,25 @@
     object-fit: cover;
     border-radius: 5px;
 }
+.btn-back{
+    margin: 0;
+}
 .wr-btnNavigate{
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    gap: 40px;
     margin: 10px;
+}
+.listNavigate{
+    border-radius: unset;
+    padding: 15px 25px;
+    color: #f4fffd;
+    background-color: #0869dc;
+    cursor: pointer;
+}
+.listNavigate :hover{
+    background-color: rgba(8, 105, 220, 0.66);
 }
 @media screen and (max-width: 570px){
     .img-popular{

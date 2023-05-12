@@ -35,23 +35,23 @@ const Characters = ({characters}) => {
                 <div className={'swiper-character'}>
                     {
                         characters.map(character =>
-                           <SwiperSlide  key={character.id}>
+                            <>
+                                {character.profile_path &&
+                                    <SwiperSlide  key={character.id}>
+                                        <Link to={`/CharactersPage/${character.id}`}>
+                                            <img
+                                                className={'img-character'}
+                                                src={`https://www.themoviedb.org/t/p/w276_and_h350_face/${character.profile_path}`}
+                                                alt=""/>
+                                            <div className={'character-info'}>
+                                                <h4>{character.name}</h4>
+                                                <p>{character.character}</p>
+                                            </div>
+                                        </Link>
+                                    </SwiperSlide>
+                                }
 
-                                  <Link to={`/CharactersPage/${character.id}`}>
-                                      {character.profile_path !==null ?
-                                      <img
-                                          className={'img-character'}
-
-                                          src={`https://www.themoviedb.org/t/p/w276_and_h350_face/${character.profile_path}`}
-                                          alt=""/>
-                                      : <div className={'no-img'}> no image</div>
-                                      }
-                               <div className={'character-info'}>
-                                   <h4>{character.name}</h4>
-                                   <p>{character.character}</p>
-                               </div>
-                                  </Link>
-                           </SwiperSlide>
+                            </>
                         )
                     }
                 </div>

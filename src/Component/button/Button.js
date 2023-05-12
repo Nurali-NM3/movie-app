@@ -2,7 +2,7 @@ import React from 'react';
 
 const Button = ({navigation,title}) => {
     return (
-        <button className={'btn'} onClick={() => navigation(-1)}>{title}</button>
+        <button className={'btn btn-back'} onClick={() => navigation(-1)}>{title}</button>
     );
 };
 

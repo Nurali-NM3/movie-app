@@ -27,7 +27,7 @@ const Hero = ({lang}) => {
                   }}
                   navigation={true}
                   modules={[Autoplay, Pagination, Navigation]}
-                  className="mySwiper"
+                  className="heroSwiper"
               >
                   {
                       movies?.map(movie => <SwiperSlide key={movie.id}>

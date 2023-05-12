@@ -25,6 +25,7 @@ const Movie = ({lang}) => {
                 setGenres(data.genres)
                 setCountry(data.production_countries)
                 setCompanies(data.production_companies)
+                console.log(data,'com')
             }).finally(() =>{
                 setLoading(false)
         })
@@ -100,6 +101,7 @@ const Movie = ({lang}) => {
                        {/*    {*/}
                        {/*        companies.map((company) =>(*/}
                        {/*            <div key={company.id} className={'company'} >*/}
+                       {/*                <img src={company.logo_path} alt=""/>*/}
                        {/*                <h2>{company.name}</h2>*/}
                        {/*            </div>*/}
                        {/*        ))*/}

@@ -10,28 +10,29 @@ import CharactersPage from "./Pages/CharactersPage";
 import NewPage from "./Pages/NewPage";
 import {useDispatch} from "react-redux";
 import {getMovies} from "./redux/action/movieAction";
+import Nav from "./Component/nav";
 
 function App() {
-    const  [lang,setLang] = useState('en-US')
+    const [lang, setLang] = useState('en-US')
     console.log(lang)
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(getMovies(lang))
     }, [dispatch, lang])
-  return (
-      <BrowserRouter>
-          <Header handleLang={setLang} lang={lang}/>
-        <Routes>
-          <Route path={'/'} element={<Homepage lang={lang}/>}/>
-            <Route path={'/popular'} element={<Popular lang={lang}/>}/>
-            <Route path={'/new'} element={<NewPage lang={lang}/>}/>
-            <Route path={'/movie/:id'} element={<Movie lang={lang}/>}/>
-            <Route path={'/searchMovie/:name'} element={<SearchPage lang={lang}/>}/>
-            <Route path={'/CharactersPage/:id'} element={<CharactersPage/>}/>
-        </Routes>
-          <Footer/>
-      </BrowserRouter>
-  );
+    return (
+        <BrowserRouter>
+            <Header handleLang={setLang} lang={lang}/>
+            <Routes>
+                <Route path={'/'} element={<Homepage lang={lang}/>}/>
+                <Route path={'/popular'} element={<Popular lang={lang}/>}/>
+                <Route path={'/new'} element={<NewPage lang={lang}/>}/>
+                <Route path={'/movie/:id'} element={<Movie lang={lang}/>}/>
+                <Route path={'/searchMovie/:name'} element={<SearchPage lang={lang}/>}/>
+                <Route path={'/CharactersPage/:id'} element={<CharactersPage/>}/>
+            </Routes>
+            <Footer/>
+        </BrowserRouter>
+    );
 }
 
 export default App;

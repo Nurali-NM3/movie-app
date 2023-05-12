@@ -55,25 +55,25 @@ const Footer =()=>{
                        </a>
                    </div>
                </div>
-              <div className="inner-link">
-                  <a href="/"> about us </a>
-                  <a href="/"> partners </a>
-                  <a href="/"> support </a>
-                  <a href="/"> sign up </a>
-              </div>
-               <div className="inner-link">
-                   <a href="/"> questions </a>
-                   <a href="/"> inform about mistakes </a>
-                   <a href="/"> work with us </a>
-                   <a href="/"> questions </a>
-               </div>
+              {/*<div className="inner-link">*/}
+              {/*    <a href="/"> about us </a>*/}
+              {/*    <a href="/"> partners </a>*/}
+              {/*    <a href="/"> support </a>*/}
+              {/*    <a href="/"> sign up </a>*/}
+              {/*</div>*/}
+              {/* <div className="inner-link">*/}
+              {/*     <a href="/"> questions </a>*/}
+              {/*     <a href="/"> inform about mistakes </a>*/}
+              {/*     <a href="/"> work with us </a>*/}
+              {/*     <a href="/"> questions </a>*/}
+              {/* </div>*/}
            </div>
            <div>
                <div className="developers-info">
                    <p>
-                       made in 2023/04/23
+                       made in 2023/05/11
                    </p>
-                   <p>developer: Nurali</p>
+                   <p>TASTY MOVIES</p>
                </div>
            </div>
        </footer>
